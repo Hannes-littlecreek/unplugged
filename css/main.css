@@ -127,6 +127,14 @@ textarea {
     line-height: 1.285;
    }
 
+   img {
+    width: 100%;
+   }
+
+   figure {
+    margin: 0;
+   }
+
    address {
     font-style: normal;
    }
@@ -157,6 +165,14 @@ textarea {
     align-items: center;
     flex-flow: row wrap;
     margin: 0;
+  }
+
+  header figure {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
   }
   
   .header-divider {
@@ -226,6 +242,10 @@ textarea {
   /* Hero Area */
   
   .hero-area {
+    background: url('../img/unplugged-retreat.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
@@ -277,6 +297,9 @@ textarea {
   /* Features */
   
   .features {
+    background: url('../img/unplugged-retreat-features.jpg');
+    background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
@@ -509,6 +532,10 @@ textarea {
       display: none;
     }
 
+    .hero-area {
+      min-height: 600px;
+    }
+
     .hero-area h1 {
       font-size: 3em;
       line-height: 1;
@@ -553,8 +580,14 @@ textarea {
       width: 85%;
     }
 
+    .reviews article figure,
     .reviews article div {
       width: 49%;
+    }
+
+    .reviews h3 {
+      width: 75%;
+      margin: 0;
     }
 
     footer .content-wrapper {
